@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-upper flex-space-around">
+        <li><i class="fa-solid fa-bars menu-icon"></i></li>
+        <li class="lists"><a href="home.html" class="lists-link">Home</a></li>
+        <li class="lists">
+          <a href="register.html" class="lists-link">Register</a>
+        </li>
+        <li class="lists"><a href="login.html" class="lists-link">Login</a></li>
+        <li class="lists"><a href="" class="lists-link">Logout</a></li>
+        <li class="lists">
+          <a href="contact.html" class="lists-link">Contact</a>
+        </li>
+        <div>
+          <a href="" class="lists-link"
+            ><img src="images/profile_pic.jpg" alt="" class="profile"
+          /></a>
+        </div>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <h2 class="lower-list">Tamim Express</h2>
+        <li class="lower-list">
+          <a href="/cart.html" class="nav__link lower-list">
+            <span><i class="fa-solid fa-cart-shopping"></i> </span>
+            Cart 2 products - $124.40
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <div class="marquee-container">
+        <div class="marquee">50% Sales Going On</div>
+      </div>
+
+      <div class="features flex-center">
+        <ul class="features-ulList flex-space-around">
+          <li>
+            <i class="fa-solid fa-truck"></i>
+            <h4>Shipping Within 7 days</h4>
+          </li>
+          <li>
+            <i class="fa-brands fa-rocketchat"></i>
+            <h4>support 27-7</h4>
+          </li>
+          <li>
+            <i class="fa-regular fa-credit-card"></i>
+            <h4>Safe Payment</h4>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main flex-space-around">
+      <div class="sidebar">
+        <section class="Categories">
+          <h3>Categories</h3>
+          <ul class="list">
+            <li>
+              <label for=""><input type="checkbox" />Telephones</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Tablets</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Televisions</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Computers</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Headphones</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Smart Home</label>
+            </li>
+          </ul>
+        </section>
+        <br />
+        <section class="price-range">
+          <h3>Price Range</h3>
+          <ul class="list">
+            <li>
+              <label for=""><input type="checkbox" />$0-$20</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />$21-$50</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />$51-$100</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />$101-$300</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />$300+</label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="price-range">
+          <h3>Price Range</h3>
+          <ul class="list">
+            <li>
+              <label for=""><input type="checkbox" />Free Shipping</label>
+            </li>
+            <li>
+              <label for=""><input type="checkbox" />Paind Shipping</label>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="items-container">
+        <section class="action flex-space-around">
+          <div class="actions__sort flex-center">
+            <label for="sort">Sort By: </label>
+            <select name="sort" id="sort">
+              <option value="sold">Most sold first</option>
+              <option value="rating">Most rated first</option>
+              <option value="price">Cheapest first</option>
+              <option value="arrival">Newest first</option>
+              <option value="discount">Biggest discount first</option>
+            </select>
+          </div>
+
+          <div class="actions__search flex-center">
+            <input type="text" placeholder="Search product" />
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="items">
+          <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product1.jpg" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product2.png" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product3.jpg" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product1.jpg" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+
+           <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product2.png" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+
+            <div class="card">
+            <div class="card-upper">
+              <p>5 in stock</p>
+              <hr style="width: 80%; color: white;">
+              <p>3 sold</p>
+            </div>
+            <div class="image-field">
+              <img src="/images/product3.jpg" alt="" />
+            </div>
+
+            <div class="product__body">
+              <h3 class="product__name">Sony V-4 Headphone</h3>
+              <br />
+              <p class="product__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro
+                impedit, nihil quia placeat autem commodi...
+                <a href="/product.html" class="learn-more">Learn More</a>
+              </p>
+              <br>
+              <h4 class="product__price">$225.99</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add To Cart</button>
+            </div>
+          </div>
+          
+        </section>
+
+
+      </div>
+    </main>
+
+    <footer class="footer flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2023 Anis Express. All rights rserved</p>
+      </div>
+    </footer>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
