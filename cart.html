@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/cart-style.css" />
+    <link rel="stylesheet" href="/media.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-upper flex-space-around">
+        <li><i class="fa-solid fa-bars menu-icon"></i></li>
+        <li class="lists"><a href="index.html" class="lists-link">Home</a></li>
+        <li class="lists">
+          <a href="register.html" class="lists-link">Register</a>
+        </li>
+        <li class="lists"><a href="login.html" class="lists-link">Login</a></li>
+        <li class="lists"><a href="" class="lists-link">Logout</a></li>
+        <li class="lists">
+          <a href="contact.html" class="lists-link">Contact</a>
+        </li>
+        <div>
+          <a href="" class="lists-link"
+            ><img src="images/profile_pic.jpg" alt="" class="profile"
+          /></a>
+        </div>
+      </ul>
+
+      <ul class="nav-lower flex-space-around">
+        <h2 class="lower-list">Tamim Express</h2>
+        <li class="lower-list">
+          <a href="/cart.html" class="nav__link lower-list">
+            <span><i class="fa-solid fa-cart-shopping"></i> </span>
+            Cart 2 products - $124.40
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="cart-main">
+      <div class="shopping_cart_container">
+        <div class="left">
+          <div class="item-count">
+            <h2>Shopping Cart [2 items]</h2>
+            <div class="down_item_count">
+              <label for="" class="">
+                <div class="input_field">
+                  <input type="checkbox" />
+                  Select all item
+                </div>
+                <div class="delete-icon flex-center">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+              </label>
+              <button class="more_shop">SHOP MORE</button>
+            </div>
+          </div>
+
+          <div class="list_select_items_container">
+            <div class="selected_items">
+              <div class="input_div flex-center">
+                <input type="checkbox" name="" id="input1" />
+              </div>
+              <div class="item flex-center">
+                <img src="/images/product1.jpg" alt="Product Image" />
+                <div class="info_item">
+                  <h3>Sony V-4 Headphone</h3>
+                  <p>price : $225.99</p>
+                </div>
+              </div>
+              <div class="icon flex-center">
+                <div class="delete-icon flex-center">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+                <div class="increase_decrease_container">
+                  <div class="increase flex-center">+</div>
+                  <div class="decrease flex-center">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list_select_items_container">
+            <div class="selected_items">
+              <div class="input_div flex-center">
+                <input type="checkbox" name="" id="input2" />
+              </div>
+              <div class="item flex-center">
+                <img src="/images/product2.png" alt="Product Image" />
+                <div class="info_item">
+                  <h3>Sony V-4 Headphone</h3>
+                  <p>price : $225.99</p>
+                </div>
+              </div>
+              <div class="icon flex-center">
+                <div class="delete-icon flex-center">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+                <div class="increase_decrease_container">
+                  <div class="increase flex-center">+</div>
+                  <div class="decrease flex-center">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="list_select_items_container">
+            <div class="selected_items">
+              <div class="input_div flex-center">
+                <input type="checkbox" name="" id="input1" />
+              </div>
+              <div class="item flex-center">
+                <img src="/images/product1.jpg" alt="Product Image" />
+                <div class="info_item">
+                  <h3>Sony V-4 Headphone</h3>
+                  <p>price : $225.99</p>
+                </div>
+              </div>
+              <div class="icon flex-center">
+                <div class="delete-icon flex-center">
+                  <i class="fa-solid fa-trash"></i>
+                </div>
+                <div class="increase_decrease_container">
+                  <div class="increase flex-center">+</div>
+                  <div class="decrease flex-center">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="right"></div>
+      </div>
+    </main>
+
+    <script src="/index.js"></script>
+  </body>
+</html>

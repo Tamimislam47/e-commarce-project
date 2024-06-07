@@ -1,0 +1,10 @@
+.cart-main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.body {
+    height: 40vh;
+    background-color: cadetblue;
+    width: 100%;
+}
