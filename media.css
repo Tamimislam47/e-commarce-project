@@ -8,9 +8,6 @@
     border-radius: 30px;
     width: 100%;
   }
-  /* .lists {
-    display: none;
-  } */
 
   .menu-icon,
   .profile {
@@ -52,9 +49,45 @@
   .register_form {
     width: 70vw;
   }
+
+  .input_div {
+    display: none;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .list_select_items_container {
+    height: 200px;
+  }
+
+  .item img {
+    width: 92%;
+    height: 95%;
+  }
+
+  .more_shop {
+    font-size: 1rem;
+  }
+
+  .info_item p {
+    font-size: 15px;
+  }
+
+  .payment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cart-main {
+    width: 100%;
+    min-height: auto;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   html {
     font-size: 15px; /* Set 1rem = 15px */
   }

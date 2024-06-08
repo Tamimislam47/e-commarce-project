@@ -4,7 +4,7 @@
   --padding: 0.5rem;
   --transition: all 0.3s;
   --border-radius: 0.6rem;
-  --border-shadow: 0.1rem 0.2rem 0.8rem rgba(0, 0, 0, 0.2);
+  --border-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -190,7 +190,6 @@ img {
   margin-left: 10px;
   padding: var(--padding);
   border-right: 0 black solid;
-  /* box-shadow: 0px 0 10px -5px rgba(0, 0, 0, 0.5); */
   gap: 30px;
   height: 100vh;
   justify-self: start;
@@ -323,7 +322,9 @@ img {
     transform: scale(1.2); /* Scale up slightly on hover */
   }
 }
-
+.card:hover {
+  cursor: pointer;
+}
 /*pagination end here*/
 
 /*main end here*/
@@ -463,13 +464,9 @@ p:hover {
 /*profile-details css end here*/
 
 /*shopping-cart css start here*/
-
-.cart-main {
-}
-
 .shopping_cart_container {
   display: flex;
-  min-height: 75vh;
+  padding: 15px;
 }
 
 .left {
@@ -604,7 +601,59 @@ label {
 
 .right {
   flex: 1;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 109px;
+}
+
+.payment {
+  height: 37vh;
+  width: 90%;
+  box-shadow: var(--border-shadow);
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+}
+.cost_div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex: 1;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.cost_div span {
+  float: right;
+}
+
+.pay_div {
+  background-color: rgb(180, 166, 166);
+  height: 30px;
+}
+
+.payment_method {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.methods_lists {
+  display: flex;
+  gap: 10%;
+  font-size: 40px;
+  width: 100%;
+  justify-content: inherit;
+}
+
+.methods_lists i:hover {
+  color: slategray;
+  cursor: pointer;
 }
 /*shopping-cart css end here*/
 
