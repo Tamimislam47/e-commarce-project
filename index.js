@@ -1,24 +1,37 @@
-const card = document.querySelector(".card");
-const cartButtons = document.querySelectorAll(".cart__btn");
+const parentElementCards = document.querySelectorAll(".card");
+const navLower = document.querySelector(".nav-lower");
+const priceUpdate = navLower.querySelector(".price_update");
+const cartProduct = document.querySelector(".value");
 
-/*add to cart js start*/
-cartButtons.forEach((button) => {
-  console.log(button);
-  let btn = button.style;
-  let for_switch = true;
-  button.addEventListener("click", () => {
-    if (for_switch) {
-      // alert("Successfully added to cart");
-      button.textContent = "Remove from Cart";
-      btn.color = "red";
-      for_switch = false;
-    } else {
-      button.textContent = "Add To Cart";
-      btn.color = "";
-      for_switch = false;
-      for_switch = true;
-    }
+let count = 0,
+  sum = 0;
+
+parentElementCards.forEach((card) => {
+  const cartButtons = card.querySelectorAll(".cart__btn");
+
+  cartButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      let imageSelectedCard = card.querySelector(".image").src;
+      let productPrice = parseInt(
+        button.previousElementSibling.previousElementSibling.getAttribute(
+          "data-value"
+        )
+      );
+
+      if (button.textContent === "Add To Cart") {
+        count++;
+        sum += productPrice;
+        button.textContent = "Remove from Cart";
+        button.style.color = "red";
+      } else {
+        count--;
+        sum -= productPrice;
+        button.textContent = "Add To Cart";
+        button.style.color = "";
+      }
+
+      cartProduct.innerHTML = count;
+      priceUpdate.innerHTML = sum;
+    });
   });
 });
-
-/*add to cart js end*/
